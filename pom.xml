@@ -72,6 +72,16 @@
             </plugin>            
         </plugins>
     </build>
+	
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+           <!-- <name>maven-releases</name> -->
+           <name>stage-dev</name>
+           <!--  <url>http://localhost:8081/repository/maven-releases/</url> -->
+           <url>http://localhost:8081/repository/stage-dev/</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
